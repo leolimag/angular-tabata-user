@@ -1,0 +1,21 @@
+Ciclos: <input type="number" [(ngModel)]="valueC" />
+<br />
+<br />
+Atividade:
+<input type="number" [(ngModel)]="valueA" />
+<br />
+<br />
+Descanso:
+<input type="number" [(ngModel)]="valueD" />
+
+<p>Ciclos: {{ this.cycles }}</p>
+<p>{{ this.time }}</p>
+<p>{{ this.state ? 'Atividade' : 'Descanso' }}</p>
+
+<button (click)="startTimer()">Iniciar</button>
+<br />
+<br />
+<button (click)="stopTimer()">Pausar</button>
+<br />
+<br />
+<button (click)="clearTimer()">Parar</button>
